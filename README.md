@@ -89,6 +89,11 @@ results for histogram_intersection distance:
 |T3.bmp	|(-333.16215706951823, 'negative')|	(-322.1184184820429, 'negative')|	(-319.97036283877503, 'positive')|	negative|
 |T2.bmp	|(-359.62760551527356, 'positive')|	(-355.4920130195786, 'negative')|	(-335.50495321440695, 'positive')	|positive|
 
+source code:
+'''bash
+xxx
+'''
+
 All corresponding results can be found in the folder `results`.
 \
 All codes are available in the repository https://github.com/JiangZehua/Human_Detection
