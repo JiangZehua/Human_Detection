@@ -75,6 +75,20 @@ results for hellinger distance:
 |T3.bmp	   | 'negative'| 'positive'| 'negative'|	negative|
 |T2.bmp	   | 'negative'| 'positive'| 'positive'|	positive|
 
+results for histogram_intersection distance:
+|  image   | 1st NN  |  2nd NN   | 3rd NN  |  3NN   | 
+|  ----  | ----  |  ----  | ----  |  ----  | 
+|T9.bmp	   | 'negative'| 'negative'| 'negative'|  negative|
+|T8.bmp	   | 'negative'| 'positive'| 'positive'|	positive|
+|T6.bmp	   | 'negative'| 'positive'| 'negative'|	negative|
+|T10.bmp	 | 'negative'| 'negative'| 'positive'|	negative|
+|T7.bmp	   | 'positive'| 'positive'| 'positive'| 	positive|
+|T5.bmp	   | 'negative'| 'positive'| 'negative'| 	negative|
+|T4.bmp	   | 'negative'| 'positive'| 'negative'|	negative|
+|T1.bmp	   | 'negative'| 'negative'| 'positive'|	negative|
+|T3.bmp	   | 'negative'| 'negative'| 'positive'|	negative|
+|T2.bmp	   | 'positive'| 'negative'| 'positive'|	positive|
+
 All corresponding results can be found in the folder `results`.
 \
 All codes are available in the repository https://github.com/JiangZehua/Human_Detection
