@@ -78,17 +78,16 @@ results for hellinger distance:
 results for histogram_intersection distance:
 |  image   | 1st NN  |  2nd NN   | 3rd NN  |  3NN   | 
 |  ----  | ----  |  ----  | ----  |  ----  | 
-|T9.bmp	   | '-279.5175108973864, negative'| 'negative'| 'negative'|  negative|
-|T9.bmp|	(-279.5175108973864, 'negative')	|(-267.4690450067166, 'negative')|	(-266.1388938664155, 'negative')|	negative|
-|T8.bmp	   | 'negative'| 'positive'| 'positive'|	positive|
-|T6.bmp	   | 'negative'| 'positive'| 'negative'|	negative|
-|T10.bmp	 | 'negative'| 'negative'| 'positive'|	negative|
-|T7.bmp	   | 'positive'| 'positive'| 'positive'| 	positive|
-|T5.bmp	   | 'negative'| 'positive'| 'negative'| 	negative|
-|T4.bmp	   | 'negative'| 'positive'| 'negative'|	negative|
-|T1.bmp	   | 'negative'| 'negative'| 'positive'|	negative|
-|T3.bmp	   | 'negative'| 'negative'| 'positive'|	negative|
-|T2.bmp	   | 'positive'| 'negative'| 'positive'|	positive|
+|T9.bmp||	(-279.5175108973864, 'negative')|	|(-267.4690450067166, 'negative')|	(-266.1388938664155, 'negative')|	negative|
+|T8.bmp	|(-352.2105569740596, 'negative')	|(-349.2375502925308, 'positive')	|(-334.58324231266977, 'positive')|	positive|
+|T6.bmp	|(-350.05272549617183, 'negative')|	(-331.5974002492977, 'positive')|	(-325.19212061313, 'negative')|	negative|
+|T10.bmp|	(-312.615625061327, 'negative')	|(-309.2273146190563, 'negative')	|(-301.7963253512087, 'positive')|	negative|
+|T7.bmp	|(nan, 'positive')	|(nan, 'positive')	|(nan, 'positive')	|positive|
+|T5.bmp	|(-356.7364950963952, 'negative')	|(-336.40645860827067, 'positive')|	(-335.7479312572468, 'negative')|	negative|
+|T4.bmp	|(-339.98939783761955, 'positive')|	(-304.0639957778126, 'positive')|	(-290.9149007597948, 'positive')|	positive|
+|T1.bmp	|(-298.4635541624302, 'negative')	|(-286.93469994389096, 'negative')|	(-284.0335986799098, 'positive')|	negative|
+|T3.bmp	|(-333.16215706951823, 'negative')|	(-322.1184184820429, 'negative')|	(-319.97036283877503, 'positive')|	negative|
+|T2.bmp	|(-359.62760551527356, 'positive')|	(-355.4920130195786, 'negative')|	(-335.50495321440695, 'positive')	|positive|
 
 All corresponding results can be found in the folder `results`.
 \
