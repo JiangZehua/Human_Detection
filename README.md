@@ -90,9 +90,9 @@ results for histogram_intersection distance:
 |T2.bmp	|(-359.62760551527356, 'positive')|	(-355.4920130195786, 'negative')|	(-335.50495321440695, 'positive')	|positive|
 
 source code:
-'''bash
-xxx
-'''
+```
+$ our code
+```
 
 All corresponding results can be found in the folder `results`.
 \
