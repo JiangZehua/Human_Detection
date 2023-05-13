@@ -62,12 +62,8 @@ image: T10
 <img src="outputs/Gradient Magnitude and angle of test images/T10.png" width="1000" height="200" />
 
 results for hellinger distance:
-|  表头   | 表头  |  表头   | 表头  |  表头   | 
+|  image   | 1st NN  |  2nd NN   | 3rd NN  |  3NN   | 
 |  ----  | ----  |  ----  | ----  |  ----  | 
-| 单元格  | 单元格 | 单元格  | 单元格 | 单元格  | 
-| 单元格  | 单元格 | 单元格  | 单元格 | 单元格  | 
-|image name|    1st NN |     2nd NN|     3rd NN|      3NN |
-| :-----： | ：----:   | :----:     | :-----：  | ：----:  |
 |T9.bmp	   | 'negative'| 'negative'| 'negative'|  negative|
 |T8.bmp	   | 'negative'| 'positive'| 'positive'|	positive|
 |T6.bmp	   | 'negative'| 'positive'| 'negative'|	negative|
