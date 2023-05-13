@@ -64,9 +64,9 @@ image: T10
 results for hellinger distance:
 |  image   | 1st NN  |  2nd NN   | 3rd NN  |  3NN   | 
 |  ----  | ----  |  ----  | ----  |  ----  | 
-|T9.bmp	   | 'negative'| 'negative'| 'negative'|  negative|
-|T8.bmp	   | 'negative'| 'positive'| 'positive'|	positive|
-|T6.bmp	   | 'negative'| 'positive'| 'negative'|	negative|
+|T9.bmp	   | 'negative'| 'negative'| '-266.1388938664155, negative'|  negative|
+|T8.bmp	   | '-352.2105569740596, negative'| '-349.2375502925308, positive'| '-334.58324231266977, positive'|	positive|
+|T6.bmp	   | '-350.05272549617183, negative'| 'positive'| 'negative'|	negative|
 |T10.bmp	 | 'negative'| 'positive'| 'negative'|	negative|
 |T7.bmp	   | 'positive'| 'positive'| 'positive'| 	positive|
 |T5.bmp	   | 'negative'| 'positive'| 'negative'| 	negative|
@@ -78,7 +78,8 @@ results for hellinger distance:
 results for histogram_intersection distance:
 |  image   | 1st NN  |  2nd NN   | 3rd NN  |  3NN   | 
 |  ----  | ----  |  ----  | ----  |  ----  | 
-|T9.bmp	   | 'negative'| 'negative'| 'negative'|  negative|
+|T9.bmp	   | '-279.5175108973864, negative'| 'negative'| 'negative'|  negative|
+|T9.bmp|	(-279.5175108973864, 'negative')	|(-267.4690450067166, 'negative')|	(-266.1388938664155, 'negative')|	negative|
 |T8.bmp	   | 'negative'| 'positive'| 'positive'|	positive|
 |T6.bmp	   | 'negative'| 'positive'| 'negative'|	negative|
 |T10.bmp	 | 'negative'| 'negative'| 'positive'|	negative|
