@@ -61,6 +61,6 @@ For the image `Peppers.bmp`, the edge maps with thresholds 0.25, 0.5, 0.75 are s
 
 All corresponding results can be found in the folder `results`.
 \
-All codes are available in the repository https://github.com/JiangZehua/Canny_Edge_Detector
+All codes are available in the repository https://github.com/JiangZehua/Human_Detection
 
 work done by Zehua Jiang and Sanyu Feng
