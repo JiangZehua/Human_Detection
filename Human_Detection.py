@@ -199,9 +199,9 @@ def three_nn(datasetfolder, img, database, algo):
     algo: the algorithm to use for classification, "histogram_intersection" or "hellinger_distance"
 
     return: tuples of the test images' name 
-            and their 1st NN's (distance, label), 
-                        2nd NN's (distance, label), 
-                        3rd NN's (distance, label), 
+            and their 1st NN's (distance, label, filename), 
+                        2nd NN's (distance, label, filename), 
+                        3rd NN's (distance, label, filename), 
             and the majority class
     '''
     # read the input image
@@ -234,10 +234,8 @@ def three_nn(datasetfolder, img, database, algo):
     else:
         raise ValueError("The 1st, 2nd, 3rd NN's labels should have at least two same labels")
     # return the result
-    return (img, (first_nn[0],first_nn[1]), (second_nn[0],second_nn[1]), (third_nn[0],third_nn[1]), majority_class)
+    return (img, (first_nn[0],first_nn[1],first_nn[2]), (second_nn[0],second_nn[1],second_nn[2]), (third_nn[0],third_nn[1],third_nn[2]), majority_class)
     
-    
-
 
 def main(test_path, database_path, algo):
     '''
@@ -260,7 +258,7 @@ def main(test_path, database_path, algo):
     # write the result to a txt file
     with open(f"outputs/{algo}_result.txt", "w") as f:
         for i in range(len(result)):
-            f.write(f"{result[i][0]}\t{result[i][1]}\t{result[i][2]}\t{result[i][3]}\t{result[i][4]}\n")
+            f.write(f"|{result[i][0]}\t|{result[i][1]}\t|{result[i][2]}\t|{result[i][3]}\t|{result[i][4]}|\n")
     return result
     
 

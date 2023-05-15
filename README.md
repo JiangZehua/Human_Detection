@@ -64,30 +64,33 @@ image: T10
 results for hellinger distance:
 |  image   | 1st NN  |  2nd NN   | 3rd NN  |  3NN   | 
 |  ----  | ----  |  ----  | ----  |  ----  | 
-|T9.bmp|	(-412.02776823816373, 'negative')|	(-403.5743512163623, 'positive')|	(-391.33410057560525, 'negative')	|negative|
-|T8.bmp|	(-492.36778388657046, 'negative')|	(-489.47683837922636, 'positive')|	(-467.8597154552168, 'positive')|	positive|
-|T6.bmp	|(-498.0999280835657, 'positive')	|(-494.25040945401435, 'negative')	|(-466.5081533981148, 'positive')	|positive|
-|T10.bmp|	(-452.02285563729515, 'negative')|	(-444.8698106246808, 'positive')|	(-435.10156485279913, 'negative')|	negative|
-|T7.bmp	|(-377.6320122288134, 'negative')	|(-372.2645706859943, 'negative')	|(-368.96750131272387, 'positive')	|negative|
-|T5.bmp	|(-493.0168005098008, 'negative')	|(-489.68741911592826, 'positive')|	(-466.9690275610776, 'positive')	|positive|
-|T4.bmp	|(-479.5248788556692, 'positive')	|(-465.17185129343983, 'negative')|	(-442.0889380304301, 'positive')	|positive|
-|T1.bmp	|(-447.01503017086213, 'positive')|	(-439.4784060773296, 'negative')	|(-417.2004655915621, 'negative')	|negative|
-|T3.bmp	|(-473.14704845628336, 'positive')|	(-472.8489229488249, 'negative')	|(-450.316661552941, 'positive')	|positive|
-|T2.bmp	|(-499.6178160879462, 'positive')|	(-497.15058668846814, 'negative')	|(-485.69467134362475, 'positive')|	positive|
+|T9.bmp	|(-412.02776823816373, 'negative', 'DB17.bmp')	|(-403.5743512163623, 'positive', 'DB4.bmp')	|(-391.33410057560525, 'negative', 'DB15.bmp')	|negative|
+|T8.bmp	|(-492.36778388657046, 'negative', 'DB17.bmp')	|(-489.47683837922636, 'positive', 'DB4.bmp')	|(-467.8597154552168, 'positive', 'DB2.bmp')	|positive|
+|T6.bmp	|(-498.0999280835657, 'positive', 'DB4.bmp')	|(-494.25040945401435, 'negative', 'DB17.bmp')	|(-466.5081533981148, 'positive', 'DB2.bmp')	|positive|
+|T10.bmp	|(-452.02285563729515, 'negative', 'DB17.bmp')	|(-444.8698106246808, 'positive', 'DB4.bmp')	|(-435.10156485279913, 'negative', 'DB18.bmp')	|negative|
+|T7.bmp	|(-377.6320122288134, 'negative', 'DB17.bmp')	|(-372.2645706859943, 'negative', 'DB19.bmp')	|(-368.96750131272387, 'positive', 'DB4.bmp')	|negative|
+|T5.bmp	|(-493.0168005098008, 'negative', 'DB17.bmp')	|(-489.68741911592826, 'positive', 'DB4.bmp')	|(-466.9690275610776, 'positive', 'DB2.bmp')	|positive|
+|T4.bmp	|(-479.5248788556692, 'positive', 'DB4.bmp')	|(-465.17185129343983, 'negative', 'DB17.bmp')	|(-442.0889380304301, 'positive', 'DB2.bmp')	|positive|
+|T1.bmp	|(-447.01503017086213, 'positive', 'DB4.bmp')	|(-439.4784060773296, 'negative', 'DB17.bmp')	|(-417.2004655915621, 'negative', 'DB20.bmp')	|negative|
+|T3.bmp	|(-473.14704845628336, 'positive', 'DB4.bmp')	|(-472.8489229488249, 'negative', 'DB17.bmp')	|(-450.316661552941, 'positive', 'DB2.bmp')	|positive|
+|T2.bmp	|(-499.6178160879462, 'positive', 'DB4.bmp')	|(-497.15058668846814, 'negative', 'DB17.bmp')	|(-485.69467134362475, 'positive', 'DB2.bmp')	|positive|
+
 
 results for histogram_intersection distance:
-|  image   | 1st NN  |  2nd NN   | 3rd NN  |  3NN   | 
+|  image   | 1st NN (distance, classification, filename)  |  2nd NN (distance, classification, filename)  | 3rd NN (distance, classification, filename) |  3NN   | 
 |  ----  | ----  |  ----  | ----  |  ----  | 
-|T9.bmp	|(-279.5175108973864, 'negative')	|(-267.4690450067166, 'negative')	|(-266.1388938664155, 'negative')	|negative|
-|T8.bmp	|(-352.2105569740596, 'negative')	|(-349.2375502925308, 'positive')	|(-334.58324231266977, 'positive')|	positive|
-|T6.bmp	|(-360.5603295802222, 'positive')	|(-350.05272549617183, 'negative')	|(-331.5974002492977, 'positive')|	positive|
-|T10.bmp|	(-312.615625061327, 'negative')	|(-309.2273146190563, 'negative')	|(-302.3972968817565, 'positive')	|negative|
-|T7.bmp	|(-268.931912682815, 'positive')	|(-264.5766923601239, 'negative')	|(-261.54277512132586, 'negative')|	negative|
-|T5.bmp	|(-356.7364950963952, 'negative')	|(-350.6425077927667, 'positive')	|(-336.40645860827067, 'positive')|	positive|
-|T4.bmp	|(-339.98939783761955, 'positive')|	(-318.60341375031237, 'negative')|	(-304.0639957778126, 'positive')|	positive|
-|T1.bmp	|(-308.542192230583, 'positive')	|(-298.4635541624302, 'negative')|	(-286.93469994389096, 'negative')	|negative|
-|T3.bmp	|(-333.16215706951823, 'negative')|	(-331.06161567124013, 'positive')	|(-322.1184184820429, 'negative')	|negative|
-|T2.bmp|	(-361.70123451476667, 'positive')|	(-359.62760551527356, 'positive')|	(-355.4920130195786, 'negative')|	positive|
+|T9.bmp	|(-279.5175108973864, 'negative', 'DB15.bmp')	|(-267.4690450067166, 'negative', 'DB17.bmp')	|(-266.1388938664155, 'negative', 'DB18.bmp')	|negative|
+|T8.bmp	|(-352.2105569740596, 'negative', 'DB17.bmp')	|(-349.2375502925308, 'positive', 'DB4.bmp')	|(-334.58324231266977, 'positive', 'DB2.bmp')	|positive|
+|T6.bmp	|(-360.5603295802222, 'positive', 'DB4.bmp')	|(-350.05272549617183, 'negative', 'DB17.bmp')	|(-331.5974002492977, 'positive', 'DB2.bmp')	|positive|
+|T10.bmp	|(-312.615625061327, 'negative', 'DB18.bmp')	|(-309.2273146190563, 'negative', 'DB17.bmp')	|(-302.3972968817565, 'positive', 'DB4.bmp')	|negative|
+|T7.bmp	|(-268.931912682815, 'positive', 'DB9.bmp')	|(-264.5766923601239, 'negative', 'DB16.bmp')	|(-261.54277512132586, 'negative', 'DB11.bmp')	|negative|
+|T5.bmp	|(-356.7364950963952, 'negative', 'DB17.bmp')	|(-350.6425077927667, 'positive', 'DB4.bmp')	|(-336.40645860827067, 'positive', 'DB2.bmp')	|positive|
+|T4.bmp	|(-339.98939783761955, 'positive', 'DB4.bmp')	|(-318.60341375031237, 'negative', 'DB17.bmp')	|(-304.0639957778126, 'positive', 'DB2.bmp')	|positive|
+|T1.bmp	|(-308.542192230583, 'positive', 'DB4.bmp')	|(-298.4635541624302, 'negative', 'DB17.bmp')	|(-286.93469994389096, 'negative', 'DB20.bmp')	|negative|
+|T3.bmp	|(-333.16215706951823, 'negative', 'DB17.bmp')	|(-331.06161567124013, 'positive', 'DB4.bmp')	|(-322.1184184820429, 'negative', 'DB19.bmp')	|negative|
+|T2.bmp	|(-361.70123451476667, 'positive', 'DB4.bmp')	|(-359.62760551527356, 'positive', 'DB2.bmp')	|(-355.4920130195786, 'negative', 'DB17.bmp')	|positive|
+
+
 
 hellinger_distance accuracy:
 1stNN:8/10
@@ -106,7 +109,7 @@ from the database and three of the test images:
 in folder outputs/classify results
 
 source code:
-```
+```python
 '''
 compute the HOG (Histograms of Oriented Gradients) feature from an input image 
 and then classify the HOG feature vector into human or no-human by using a 3-nearest neighbor (NN) classifier.
@@ -308,9 +311,9 @@ def three_nn(datasetfolder, img, database, algo):
     algo: the algorithm to use for classification, "histogram_intersection" or "hellinger_distance"
 
     return: tuples of the test images' name 
-            and their 1st NN's (distance, label), 
-                        2nd NN's (distance, label), 
-                        3rd NN's (distance, label), 
+            and their 1st NN's (distance, label, filename), 
+                        2nd NN's (distance, label, filename), 
+                        3rd NN's (distance, label, filename), 
             and the majority class
     '''
     # read the input image
@@ -343,10 +346,8 @@ def three_nn(datasetfolder, img, database, algo):
     else:
         raise ValueError("The 1st, 2nd, 3rd NN's labels should have at least two same labels")
     # return the result
-    return (img, (first_nn[0],first_nn[1]), (second_nn[0],second_nn[1]), (third_nn[0],third_nn[1]), majority_class)
+    return (img, (first_nn[0],first_nn[1],first_nn[2]), (second_nn[0],second_nn[1],second_nn[2]), (third_nn[0],third_nn[1],third_nn[2]), majority_class)
     
-    
-
 
 def main(test_path, database_path, algo):
     '''
@@ -407,13 +408,79 @@ if __name__ == "__main__":
     for algo in algos:
         print(f"Start classifying using {algo}")
         main(test_folder, train_folder, algo)
-    
-
-
 ```
 
+For visualization, we use the following code:
+```python
+import os
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
 
-All corresponding results can be found in the folder `results`.
+from Human_Detection import compute_HOG, convert_to_gray, gradient, gradient_angle, gradient_magnitude
+
+
+def show_img(origin_image: np.ndarray, save_name):
+    '''
+    show the image and its HOG feature vector, for debugging purpose and report
+    '''
+    # convert the image to gray scale
+    origin_image = convert_to_gray(origin_image)
+
+    # get the gradient magnitude and angle
+    gradient_x, gradient_y = gradient(origin_image)
+    gradient_magnitude_image = gradient_magnitude(gradient_x, gradient_y)
+    gradient_angle_image = gradient_angle(gradient_x, gradient_y)
+
+    # save the 5 plot in a same figure with original image, gradient_x, gradient_y, gradient magnitude, gradient angle
+    fig, axs = plt.subplots(1, 5, figsize=(20, 4))
+    axs[0].imshow(origin_image, cmap=plt.cm.gray)
+    axs[0].set_title('Input image')
+    axs[1].imshow(gradient_x, cmap=plt.cm.gray)
+    axs[1].set_title('Gradient x')
+    axs[2].imshow(gradient_y, cmap=plt.cm.gray)
+    axs[2].set_title('Gradient y')
+    axs[3].imshow(gradient_magnitude_image, cmap=plt.cm.gray)
+    axs[3].set_title('Gradient magnitude')
+    axs[4].imshow(gradient_angle_image, cmap=plt.cm.gray)
+    axs[4].set_title('Gradient angle')
+    # plt.show()
+    for ax in axs:
+        ax.set_axis_off()
+    fig.savefig(f"outputs/{save_name}.png")
+
+    # compute the HOG feature vector
+    block_histogram = compute_HOG(origin_image)
+    # reshape the HOG feature vector
+    HOG_feature = block_histogram.reshape(7524)
+    # show the image
+    plt.figure(figsize=(8, 4))
+    plt.subplot(121).set_axis_off()
+    plt.imshow(origin_image, cmap=plt.cm.gray)
+    plt.title('Input image')
+    # show the HOG feature vector
+    plt.subplot(122).set_axis_off()
+    plt.plot(HOG_feature)
+    plt.title('Histogram of Oriented Gradients')
+    # save the figure
+    plt.savefig(f"outputs/{save_name}_HOG.png")
+
+
+if __name__ == "__main__":
+    # debug_num = [0, 1, 2, 3, 5, 20, 35, 95, 169, 171, 178, 179, 180]
+    # for num in debug_num:
+    #     cal_portions_index(num)
+    train_folder = "/Users/zehuajiang/My/CS6643 Computer Vision Spring 2023/Project_2_Human_Detection/Image Data 2/Database images"
+    test_folder = "/Users/zehuajiang/My/CS6643 Computer Vision Spring 2023/Project_2_Human_Detection/Image Data 2/Test images"
+    for img in os.listdir(test_folder):
+        img_path = os.path.join(test_folder, img)
+        output_path = os.path.join("outputs", img.split(".")[0] + ".txt")
+        image = cv2.imread(img_path)
+        show_img(image, save_name=img.split(".")[0])
+```
+Before using the code, remember to change the path of the image in the code, and comment/uncomment out the part you (don't) want to run.
+
+All corresponding results can be found in the folder `outputs`.
 \
 All codes are available in the repository https://github.com/JiangZehua/Human_Detection
 
