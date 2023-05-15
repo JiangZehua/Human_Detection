@@ -139,6 +139,8 @@ def compute_HOG(image: np.ndarray):
     for i in range(image.shape[0] // cell_size - block_size + 1):
         for j in range(image.shape[1] // cell_size - block_size + 1):
             result[i, j] = block[i, j] / np.sqrt(np.sum(block[i, j] ** 2)) # L2 normalization
+            # replace the nan with 0 which caused by the L2 normalization when the sum of the block is 0
+            result[np.isnan(result)] = 0
     assert ((image.shape[0] // cell_size - block_size + 1) * (image.shape[1] // cell_size - block_size + 1) * 36 == 7524)
 
     return result
@@ -210,7 +212,7 @@ def three_nn(datasetfolder, img, database, algo):
     elif algo == "hellinger_distance":
         distance = hellinger_distance
     else:
-        raise NotImplementedError
+        raise NotImplementedError # we only have two algorithms for calculating the distance
     
     # get the HOG feature vector for the input image
     input_hist = get_HOG_feature(input_image)
@@ -267,33 +269,34 @@ if __name__ == "__main__":
     train_folder = "/Users/zehuajiang/My/CS6643 Computer Vision Spring 2023/Project_2_Human_Detection/Image Data 2/Database images"
     test_folder = "/Users/zehuajiang/My/CS6643 Computer Vision Spring 2023/Project_2_Human_Detection/Image Data 2/Test images"
     
-    ################### for debugging purpose ###################
+    ################### for debugging purpose: debugging spliting the magnitude to two bins ###################
     # debug_num = [0, 1, 2, 3, 5, 20, 35, 95, 169, 171, 178, 179, 180]
     # for num in debug_num:
     #     cal_portions_index(num)
 
 
     # ################### for getting HOG features for selected images ###################
-    # selected_training_images_path = ["/Users/zehuajiang/My/CS6643 Computer Vision Spring 2023/Project_2_Human_Detection/Image Data 2/Database images/positive/DB2.bmp",
-    #                                 "/Users/zehuajiang/My/CS6643 Computer Vision Spring 2023/Project_2_Human_Detection/Image Data 2/Database images/positive/DB9.bmp",
-    #                                "/Users/zehuajiang/My/CS6643 Computer Vision Spring 2023/Project_2_Human_Detection/Image Data 2/Database images/positive/DB15.bmp",]
-    # train_img_list = ["DB2.bmp", "DB9.bmp",  "DB15.bmp"]
-    # test_img_list = ["T2.bmp", "T5.bmp", "T10.bmp"]
+    selected_training_images_path = ["/Users/zehuajiang/My/CS6643 Computer Vision Spring 2023/Project_2_Human_Detection/Image Data 2/Database images/positive/DB2.bmp",
+                                    "/Users/zehuajiang/My/CS6643 Computer Vision Spring 2023/Project_2_Human_Detection/Image Data 2/Database images/positive/DB9.bmp",
+                                   "/Users/zehuajiang/My/CS6643 Computer Vision Spring 2023/Project_2_Human_Detection/Image Data 2/Database images/negative/DB15.bmp",]
+    train_img_list = ["DB2.bmp", "DB9.bmp",  "DB15.bmp"]
+    test_img_list = ["T2.bmp", "T5.bmp", "T10.bmp"]
 
-    # for i, img_path in enumerate(selected_training_images_path):
-    #     output_path = os.path.join("outputs", train_img_list[i].split(".")[0] + ".txt")
-    #     image = cv2.imread(img_path)
-    #     get_HOG_feature(image, output_path=output_path, save=True)
-    # for img in test_img_list:
-    #     img_path = os.path.join(test_folder, img)
-    #     output_path = os.path.join("outputs", img.split(".")[0] + ".txt")
-    #     image = cv2.imread(img_path)
-    #     get_HOG_feature(image, output_path=output_path, save=True)
+    for i, img_path in enumerate(selected_training_images_path):
+        output_path = os.path.join("outputs", train_img_list[i].split(".")[0] + ".txt")
+        image = cv2.imread(img_path)
+        get_HOG_feature(image, output_path=output_path, save=True)
+    for img in test_img_list:
+        img_path = os.path.join(test_folder, img)
+        output_path = os.path.join("outputs", img.split(".")[0] + ".txt")
+        image = cv2.imread(img_path)
+        get_HOG_feature(image, output_path=output_path, save=True)
 
     ################### for classification ###################
     # get the HOG feature vector for the test images
     algos = ["histogram_intersection", "hellinger_distance"]
     for algo in algos:
+        print(f"Start classifying using {algo}")
         main(test_folder, train_folder, algo)
     
 
