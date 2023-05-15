@@ -62,7 +62,7 @@ image: T10
 <img src="outputs/Gradient Magnitude and angle of test images/T10.png" width="1000" height="200" />
 
 results for hellinger distance:
-|  image   | 1st NN  |  2nd NN   | 3rd NN  |  3NN   | 
+|  image   | 1st NN (distance, classification, filename)  |  2nd NN (distance, classification, filename)  | 3rd NN (distance, classification, filename) |  3NN   | 
 |  ----  | ----  |  ----  | ----  |  ----  | 
 |T9.bmp	|(-412.02776823816373, 'negative', 'DB17.bmp')	|(-403.5743512163623, 'positive', 'DB4.bmp')	|(-391.33410057560525, 'negative', 'DB15.bmp')	|negative|
 |T8.bmp	|(-492.36778388657046, 'negative', 'DB17.bmp')	|(-489.47683837922636, 'positive', 'DB4.bmp')	|(-467.8597154552168, 'positive', 'DB2.bmp')	|positive|
