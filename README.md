@@ -89,6 +89,18 @@ results for histogram_intersection distance:
 |T3.bmp	|(-333.16215706951823, 'negative')|	(-331.06161567124013, 'positive')	|(-322.1184184820429, 'negative')	|negative|
 |T2.bmp|	(-361.70123451476667, 'positive')|	(-359.62760551527356, 'positive')|	(-355.4920130195786, 'negative')|	positive|
 
+hellinger_distance accuracy:
+1stNN:8/10
+2ndNN:3/10
+3rdNN:6/10
+3-NN:7/10
+
+histogram intersection accuracy:
+1stNN:6/10
+2ndNN:7/10
+3rdNN:4/10
+3-NN:6/10
+
 The ASCII (.txt) files containing the HOG feature values for three of the sample images 
 from the database and three of the test images:
 in folder outputs/classify results
